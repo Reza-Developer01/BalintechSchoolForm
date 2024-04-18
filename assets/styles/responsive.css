@@ -1,3 +1,12 @@
+/* ==== Custom Medi Queries ==== */
+@media screen and (min-width: 480px) {
+    .form__input-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 1rem;
+    }
+}
+
 @media screen and (min-width: 576px) {}
 
 @media screen and (min-width: 768px) {}

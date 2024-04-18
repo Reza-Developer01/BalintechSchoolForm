@@ -41,6 +41,23 @@ button {
     font-family: inherit;
     outline: none;
     border: none;
+    background-color: transparent;
+}
+
+::placeholder {
+    color: #A7A7A7;
+    font-size: 1.4rem;
+    font-family: "IranYekanX-Regular";
+    line-height: 2rem;
+}
+
+input:focus {
+    border: 1px solid #1D2939;
+    color: #1D2939;
+}
+
+input:focus::placeholder {
+    color: #1D2939;
 }
 
 /* ==== Start ==== */
@@ -55,7 +72,9 @@ button {
     padding: 4.2rem 2rem;
 }
 
-.register-head {}
+.register-head {
+    margin-bottom: 5.4rem;
+}
 
 .register-head__title {
     color: var(--black-color);
@@ -69,6 +88,60 @@ button {
     color: var(--text-color);
     font-family: "IranYekanX-Medium";
     line-height: 2.4rem;
+}
+
+.register-form {}
+
+.form {
+    /* display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem; */
+}
+
+.form__input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.2rem;
+    /* width: 100%; */
+    flex-grow: 1;
+}
+
+.form__label {
+    margin-bottom: 1.6rem;
+    font-size: 1.4rem;
+    font-family: "IranYekanX-Medium";
+    line-height: 2.1rem;
+    color: var(--black-color);
+}
+
+.form__input-text-box {
+    border: 1px solid #E5E5E5CC;
+    padding: 1.6rem;
+    border-radius: .4rem;
+}
+
+.form__submit-btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    width: 100%;
+    padding: 1.4rem 0;
+    border-radius: .4rem;
+    font-family: "IranYekanX-Medium";
+    line-height: 2.4rem;
+    transition: all 150ms ease-in-out;
+    border: 1px solid var(--primary-color);
+    height: 5.2rem;
+    font-size: 1.6rem;
+}
+
+.form__submit-btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
 }
 
 /* ==== Finish ==== */
