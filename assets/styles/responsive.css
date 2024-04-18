@@ -7,12 +7,52 @@
     }
 }
 
+@media screen and (min-width: 500px) {
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @media screen and (min-width: 576px) {}
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    .register-head__title {
+        font-size: 3.2rem;
+        line-height: 4.8rem;
+    }
 
-@media screen and (min-width: 992px) {}
+    .register-head__text {
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+    }
 
-@media screen and (min-width: 1200px) {}
+    .form__label,
+    .form__input-text-box,
+    ::placeholder {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .register-form__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .register__wrapper {
+        display: flex;
+        height: 70rem;
+    }
+
+    .register-banner {
+        display: inline-block;
+    }
+}
 
 @media screen and (min-width: 1400px) {}

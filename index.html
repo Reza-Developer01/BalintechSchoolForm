@@ -24,55 +24,64 @@
         <section class="register">
             <div class="container">
                 <div class="register__wrapper">
-                    <!-- header form -->
-                    <div class="register-head">
-                        <h1 class="register-head__title">فرم ثبت نام اولیه هنرستان بالین تک</h1>
-                        <p class="register-head__text">هم اکنون ، به راحتی ثبت نام کنید</p>
+                    <!-- form -->
+                    <div class="register-form__wrapper">
+                        <!-- header form -->
+                        <div class="register-head">
+                            <h1 class="register-head__title">فرم ثبت نام اولیه هنرستان بالین تک</h1>
+                            <p class="register-head__text">هم اکنون ، به راحتی ثبت نام کنید</p>
+                        </div>
+
+                        <!-- main body -->
+                        <div class="register-form">
+                            <form action="#" class="form">
+                                <div class="form__input-wrapper">
+                                    <div class="form__input">
+                                        <label for="firstname" class="form__label">نام</label>
+                                        <input type="text" class="form__input-text-box" placeholder="نام"
+                                            id="firstname">
+                                    </div>
+                                    <div class="form__input">
+                                        <label for="lastname" class="form__label">نام خانوادگی</label>
+                                        <input type="text" class="form__input-text-box" placeholder="نام خانوادگی"
+                                            id="lastname">
+                                    </div>
+                                </div>
+
+                                <div class="form__input-wrapper">
+                                    <div class="form__input">
+                                        <label for="nationalcode" class="form__label">کد ملی</label>
+                                        <input type="number" class="form__input-text-box" placeholder="کد ملی"
+                                            id="nationalcode">
+                                    </div>
+                                    <div class="form__input">
+                                        <label for="fathername" class="form__label">نام پدر</label>
+                                        <input type="text" class="form__input-text-box" placeholder="نام پدر"
+                                            id="fathername">
+                                    </div>
+                                </div>
+
+                                <div class="form__input-wrapper">
+                                    <div class="form__input">
+                                        <label for="previousschool" class="form__label">مدرسه قبلی</label>
+                                        <input type="text" class="form__input-text-box" placeholder="مدرسه قبلی"
+                                            id="previousschool">
+                                    </div>
+                                    <div class="form__input">
+                                        <label for="phone" class="form__label">شماره تماس</label>
+                                        <input type="number" class="form__input-text-box" placeholder="شماره تماس"
+                                            id="phone">
+                                    </div>
+                                </div>
+
+                                <button class="form__submit-btn">ثبت نام</button>
+                            </form>
+                        </div>
                     </div>
 
-                    <!-- main body -->
-                    <div class="register-form">
-                        <form action="#" class="form">
-                            <div class="form__input-wrapper">
-                                <div class="form__input">
-                                    <label for="firstname" class="form__label">نام</label>
-                                    <input type="text" class="form__input-text-box" placeholder="نام" id="firstname">
-                                </div>
-                                <div class="form__input">
-                                    <label for="lastname" class="form__label">نام خانوادگی</label>
-                                    <input type="text" class="form__input-text-box" placeholder="نام خانوادگی"
-                                        id="lastname">
-                                </div>
-                            </div>
-
-                            <div class="form__input-wrapper">
-                                <div class="form__input">
-                                    <label for="nationalcode" class="form__label">کد ملی</label>
-                                    <input type="number" class="form__input-text-box" placeholder="کد ملی"
-                                        id="nationalcode">
-                                </div>
-                                <div class="form__input">
-                                    <label for="fathername" class="form__label">نام پدر</label>
-                                    <input type="text" class="form__input-text-box" placeholder="نام پدر"
-                                        id="fathername">
-                                </div>
-                            </div>
-
-                            <div class="form__input-wrapper">
-                                <div class="form__input">
-                                    <label for="previousschool" class="form__label">مدرسه قبلی</label>
-                                    <input type="text" class="form__input-text-box" placeholder="مدرسه قبلی"
-                                        id="previousschool">
-                                </div>
-                                <div class="form__input">
-                                    <label for="phone" class="form__label">شماره تماس</label>
-                                    <input type="number" class="form__input-text-box" placeholder="شماره تماس"
-                                        id="phone">
-                                </div>
-                            </div>
-
-                            <button class="form__submit-btn">ثبت نام</button>
-                        </form>
+                    <!-- image -->
+                    <div class="register-banner">
+                        <img src="./assets/images/img.jpg" class="register-banner__img" alt="image">
                     </div>
                 </div>
             </div>
