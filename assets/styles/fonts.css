@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "IranYekanX-Regular";
+    src: url("../fonts/IRANYekanXFaNum-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "IranYekanX-Medium";
+    src: url("../fonts/IRANYekanXFaNum-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "IranYekanX-Bold";
+    src: url("../fonts/IRANYekanXFaNum-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "IranYekanX-Heavy";
+    src: url("../fonts/IRANYekanXFaNum-Heavy.woff2") format("woff2");
+}
