@@ -1,3 +1,12 @@
+/* ==== Variables ==== */
+:root {
+    --primary-color: #FFC374;
+    --black-color: #2B2B2B;
+    --white-color: #FFFFFF;
+    --text-color: #00000080;
+}
+
+
 /* ==== Configuration ==== */
 html {
     box-sizing: border-box;
@@ -12,9 +21,10 @@ html {
 }
 
 body {
-    font-family: Roboto-Regular, sans-serif;
+    font-family: "IranYekanX-Regular", sans-serif;
     line-height: 1.6;
     font-size: 1.6rem;
+    background-color: #E5E9EC;
 }
 
 /* ==== Custom Resets ==== */
@@ -34,4 +44,31 @@ button {
 }
 
 /* ==== Start ==== */
+.main {
+    margin: 5.2rem 0;
+}
+
+.register {}
+
+.register__wrapper {
+    background: var(--white-color);
+    padding: 4.2rem 2rem;
+}
+
+.register-head {}
+
+.register-head__title {
+    color: var(--black-color);
+    font-family: "IranYekanX-Heavy";
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.register-head__text {
+    color: var(--text-color);
+    font-family: "IranYekanX-Medium";
+    line-height: 2.4rem;
+}
+
 /* ==== Finish ==== */
