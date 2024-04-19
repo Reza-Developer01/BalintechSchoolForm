@@ -1,6 +1,6 @@
 /* ==== Variables ==== */
 :root {
-    --primary-color: #FF9500;
+    --primary-color: #f59e0b;
     --black-color: #27272a;
     --white-color: #FFFFFF;
     --text-color: #9CA3AF;
@@ -24,11 +24,12 @@ body {
     font-family: "IranYekanX-Regular", sans-serif;
     line-height: 1.6;
     font-size: 1.6rem;
-    background: url("../images/Compress.jpg");
+    background: url("../images/img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     backdrop-filter: blur(8px);
+    min-height: 100vh;
 }
 
 /* ==== Custom Resets ==== */
