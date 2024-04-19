@@ -1,9 +1,9 @@
 /* ==== Variables ==== */
 :root {
-    --primary-color: #FFC374;
-    --black-color: #2B2B2B;
+    --primary-color: #FF9500;
+    --black-color: #27272a;
     --white-color: #FFFFFF;
-    --text-color: #00000080;
+    --text-color: #9CA3AF;
 }
 
 
@@ -24,8 +24,7 @@ body {
     font-family: "IranYekanX-Regular", sans-serif;
     line-height: 1.6;
     font-size: 1.6rem;
-    background-color: #E5E9EC;
-    background: url("../images/img.jpg");
+    background: url("../images/Compress.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -50,24 +49,24 @@ button {
 }
 
 ::placeholder {
-    color: #A7A7A7;
+    color: var(--text-color);
     font-size: 1.4rem;
     font-family: "IranYekanX-Regular";
     line-height: 2rem;
 }
 
 input:focus {
-    border: 1px solid #1D2939;
-    color: #1D2939;
+    border: 1px solid var(--black-color);
+    color: var(--black-color);
 }
 
 input:focus::placeholder {
-    color: #1D2939;
+    color: var(--black-color);
 }
 
 /* ==== Start ==== */
 .main {
-    margin: 5.2rem 0;
+    padding: 5.2rem 0;
 }
 
 .register {}
