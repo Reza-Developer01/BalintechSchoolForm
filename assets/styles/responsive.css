@@ -33,6 +33,10 @@
     ::placeholder {
         font-size: 1.6rem;
     }
+
+    .register-form__warning-messages {
+        font-size: 1.6rem;
+    }
 }
 
 @media screen and (min-width: 992px) {
