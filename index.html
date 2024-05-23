@@ -34,7 +34,7 @@
 
                         <!-- main body -->
                         <div class="register-form">
-                            <form action="./index.php" method="post" class="form">
+                            <form action="index.php" method="post" class="form">
                                 <div class="form__input-wrapper">
                                     <div class="form__input">
                                         <label for="firstname" class="form__label">نام</label>
@@ -55,9 +55,9 @@
                                             id="nationalcode" name="nationalcode">
                                     </div>
                                     <div class="form__input">
-                                        <label for="fathername" class="form__label">نام پدر</label>
-                                        <input type="text" class="form__input-text-box" placeholder="نام پدر"
-                                            id="fathername" name="fathername">
+                                        <label for="adjusted" class="form__label">معدل</label>
+                                        <input type="text" class="form__input-text-box" placeholder="معدل" id="adjusted"
+                                            name="adjusted">
                                     </div>
                                 </div>
 
@@ -74,8 +74,16 @@
                                     </div>
                                 </div>
 
-                                <!-- <button type="submit" class="form__submit-btn">ثبت نام</button> -->
-                                <input type="submit" value="ثبت نام" class="form__submit-btn">
+                                <div class="form__input-wrapper">
+                                    <div class="form__input">
+                                        <label for="previousSchool" class="form__label">مدرسه قبلی</label>
+                                        <input type="text" class="form__input-text-box" placeholder="مدرسه قبلی"
+                                            id="previousSchool" name="previousSchool">
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="form__submit-btn">ثبت نام</button>
+                                <!-- <input type="submit" value="ثبت نام" class="form__submit-btn"> -->
 
                                 <div class="register-form__warning-messages">
                                     <p class="register-form__warning-message">به زودی با شما تماس خواهیم گرفت.</p>

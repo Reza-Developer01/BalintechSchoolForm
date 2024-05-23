@@ -3,7 +3,7 @@ const getBtnSubmit = document.querySelector(".form__submit-btn");
 const getParentInput = document.querySelectorAll(".form__input");
 
 getBtnSubmit.addEventListener("click", (e) => {
-  e.preventDefault();
+  // e.preventDefault();
 
   getInputs.forEach((input) => {
     if (!input.value) {

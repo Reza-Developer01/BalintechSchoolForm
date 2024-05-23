@@ -3,15 +3,16 @@
 $file = 'registrations.csv';
 
 // اطلاعات فرم ارسال شده
-$name = isset($_POST['name']) ? htmlspecialchars($_POST['name']) : '';
-$family = isset($_POST['family']) ? htmlspecialchars($_POST['family']) : '';
+$name = isset($_POST['firstname']) ? htmlspecialchars($_POST['firstname']) : '';
+$family = isset($_POST['lastname']) ? htmlspecialchars($_POST['lastname']) : '';
 $nationalCode = isset($_POST['nationalcode']) ? htmlspecialchars($_POST['nationalcode']) : '';
-$fatherName = isset($_POST['fathername']) ? htmlspecialchars($_POST['fathername']) : '';
+$adjusted = isset($_POST['adjusted']) ? htmlspecialchars($_POST['adjusted']) : '';
 $dateOfBirth = isset($_POST['dateofbirth']) ? htmlspecialchars($_POST['dateofbirth']) : '';
 $phone = isset($_POST['phone']) ? htmlspecialchars($_POST['phone']) : '';
+$previousSchool = isset($_POST['previousSchool']) ? htmlspecialchars($_POST['previousSchool']) : '';
 
 // بررسی ارسال فرم و ذخیره داده‌ها
-if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($name) && !empty($family) && !empty($nationalCode) && !empty($fatherName) && !empty($dateOfBirth) && !empty($phone)) {
+if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($name) && !empty($family) && !empty($nationalCode) && !empty($adjusted) && !empty($dateOfBirth) && !empty($phone)  && !empty($previousSchool)) {
     // تلاش برای باز کردن فایل با حداکثر 5 بار تلاش
     $attempts = 0;
     $maxAttempts = 5;
@@ -29,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($name) && !empty($family) && 
         // قفل گذاری روی فایل
         if (flock($handle, LOCK_EX)) {
             // افزودن داده‌های کاربر به فایل
-            if (fputcsv($handle, [$name, $family, $nationalCode, $fatherName, $dateOfBirth, $phone]) === false) {
+            if (fputcsv($handle, [$name, $family, $nationalCode, $adjusted, $dateOfBirth, $phone, $previousSchool]) === false) {
                 error_log("Error writing data to the CSV file.");
                 http_response_code(500);
                 echo "مشکلی در ثبت نام رخ داده است. لطفاً دوباره امتحان کنید.";
